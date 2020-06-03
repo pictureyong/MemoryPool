@@ -2,7 +2,7 @@
 
 namespace mp {
 
-static const int kBlockSize = 8*4096;
+static const int kBlockSize = 4096;
 
 CAllocator::CAllocator() : _memory_usage(0) {
     std::cout << "CAllocator()" << std::endl;
