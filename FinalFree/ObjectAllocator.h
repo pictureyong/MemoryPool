@@ -12,8 +12,6 @@
 #include <cassert>
 #include <memory>
 
-#include <iostream>
-
 namespace mp {
 
 template <typename T, class Allocator>

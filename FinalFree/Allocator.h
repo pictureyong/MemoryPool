@@ -6,13 +6,10 @@
 #ifndef _ALLOCATOR_H__
 #define _ALLOCATOR_H__
 
-#include <iostream>
-
 #include <atomic>
 #include <cstddef>
 #include <cassert>
 #include <vector>
-// #include <cstdint>
 
 namespace mp {
 
@@ -44,7 +41,6 @@ private:
 };
 
 inline void* CAllocator::Allocate(size_t bytes) {
-    std::cout << bytes << std::endl;
     assert(bytes > 0);
     if (bytes < _alloc_bytes_remaining) {
         void* result = _alloc_ptr;
